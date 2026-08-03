@@ -14,8 +14,8 @@ const profile = {
   code, learn from people better than me, and keep shipping projects like ShopEase.`,
   email: "Yashpareek766@gmail.com",
   github: "https://github.com/yash001246",
-  linkedin: "https://www.linkedin.com/in/yashwardhan-pareek-52231b321",
-  resumeUrl: "Resume_.pdf",
+  linkedin: "https://www.linkedin.com/in/yashwardhan-pareek",
+  resumeUrl: "Resume-Yash.pdf",
 };
 
 const skills = [
