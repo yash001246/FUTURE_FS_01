@@ -15,7 +15,7 @@ const profile = {
   email: "Yashpareek766@gmail.com",
   github: "https://github.com/yash001246",
   linkedin: "https://www.linkedin.com/in/yashwardhan-pareek-52231b321",
-  resumeUrl: "Resume.pdf",
+  resumeUrl: "Resume_.pdf",
 };
 
 const skills = [
