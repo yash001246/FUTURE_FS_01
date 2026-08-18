@@ -1,0 +1,22 @@
+# Environment variables — NEVER commit these, they contain secrets
+.env
+.env.local
+*.env
+!.env.example
+
+# Dependencies
+node_modules/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Build output (if you ever add a build step)
+dist/
+build/

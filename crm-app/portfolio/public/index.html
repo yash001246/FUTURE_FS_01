@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yashwardhan Pareek — Full-Stack MERN Developer</title>
+  <meta name="description" content="Portfolio of Yashwardhan Pareek — full-stack MERN developer, creator of ShopEase." />
+  <link rel="stylesheet" href="css/style.css" />
+
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="alternate icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#top" class="navbar__brand mono"><span class="navbar__prompt">~/</span><span id="brandName">dev</span></a>
+
+      <nav class="navbar__links">
+        <a href="#about" class="navbar__link mono">about</a>
+        <a href="#skills" class="navbar__link mono">skills</a>
+        <a href="#projects" class="navbar__link mono">projects</a>
+        <a href="#blog" class="navbar__link mono">blog</a>
+        <a href="#contact" class="navbar__link mono">contact</a>
+        <a href="#contact" class="btn btn-primary navbar__cta">say hi</a>
+      </nav>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="navbar__mobile" id="navMobile">
+      <a href="#about" class="mono">about</a>
+      <a href="#skills" class="mono">skills</a>
+      <a href="#projects" class="mono">projects</a>
+      <a href="#blog" class="mono">blog</a>
+      <a href="#contact" class="mono">contact</a>
+      <a href="#contact" class="btn btn-primary">say hi</a>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section id="top" class="hero">
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <div class="eyebrow">available for work</div>
+        <h1 class="hero__title" id="heroTitle"></h1>
+        <p class="hero__desc" id="heroDesc"></p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn-primary">view projects →</a>
+          <a href="#contact" class="btn btn-outline">get in touch</a>
+        </div>
+      </div>
+
+      <div class="terminal" role="img" aria-label="Terminal introduction animation">
+        <div class="terminal__bar">
+          <span class="dot dot--red"></span>
+          <span class="dot dot--yellow"></span>
+          <span class="dot dot--green"></span>
+          <span class="terminal__title mono">guest@portfolio: ~</span>
+        </div>
+        <div class="terminal__body mono" id="terminalBody"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="eyebrow">about</div>
+      <h2>Background &amp; goals</h2>
+      <p class="section-sub">The short version of how I got here, and where I'm trying to go next.</p>
+
+      <div class="about__grid">
+        <div class="about__text" id="aboutText">
+          <div class="about__actions">
+            <a href="#" id="resumeLink" class="btn btn-outline">↓ download resume</a>
+          </div>
+        </div>
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section id="skills">
+    <div class="container">
+      <div class="eyebrow">skills</div>
+      <h2>Tech stack</h2>
+      <p class="section-sub">Grouped the way I actually reach for them — by layer, not by hype.</p>
+      <div class="skills__grid" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section id="projects">
+    <div class="container">
+      <div class="eyebrow">projects</div>
+      <h2>Things I've built</h2>
+      <p class="section-sub">A look at what I've shipped so far.</p>
+
+      <div class="projects__grid" id="projectsGrid">
+        <p class="blog__empty mono">loading projects…</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Blog ===== -->
+  <section id="blog">
+    <div class="container">
+      <div class="eyebrow">blog</div>
+      <h2>Notes &amp; writeups</h2>
+      <p class="section-sub">Short posts on what I'm building and what I'm learning while I do it.</p>
+      <div class="blog__grid" id="blogGrid">
+        <p class="blog__empty mono">loading posts…</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact">
+    <div class="container">
+      <div class="eyebrow">contact</div>
+      <h2>Let's talk</h2>
+      <p class="section-sub">Internship, freelance gig, or just want to talk about code — my inbox is open.</p>
+
+      <div class="contact__grid">
+        <div class="contact__info" id="contactInfo"></div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="contact-form__field">
+            <label for="name" class="mono">name</label>
+            <input id="name" name="name" type="text" required placeholder="Jane Doe" />
+          </div>
+          <div class="contact-form__field">
+            <label for="email" class="mono">email</label>
+            <input id="email" name="email" type="email" required placeholder="jane@example.com" />
+          </div>
+          <div class="contact-form__field">
+            <label for="message" class="mono">message</label>
+            <textarea id="message" name="message" required rows="5" placeholder="What's on your mind?"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" id="contactSubmit">send message →</button>
+
+          <p class="contact-form__status" id="contactStatus"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="mono" id="footerName"></span>
+      <span class="mono"></span>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
