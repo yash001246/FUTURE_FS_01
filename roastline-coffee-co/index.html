@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roast Line Coffee Co. | Small-Batch Roastery</title>
+<meta name="description" content="Roast Line Coffee Co. — a small-batch roastery. Single-origin beans, hand-roasted daily, and a warm neighbourhood cafe.">
+<meta name="theme-color" content="#2A1B12">
+
+<!-- Favicons -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Work+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Roast progress line -->
+<div class="roast-progress" id="roastProgress"></div>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="30" height="30">
+          <path d="M8 15h20a3 3 0 0 1 3 3v2a6 6 0 0 1-6 6h-1.2A8 8 0 0 1 16 33h-1A8 8 0 0 1 7 25V15z" fill="none" stroke="currentColor" stroke-width="2.2"/>
+          <path d="M30 18h2a3.6 3.6 0 0 1 0 7.2h-2" fill="none" stroke="currentColor" stroke-width="2.2"/>
+          <path d="M13 11c-1 1.4-1 2.6 0 4M18 11c-1 1.4-1 2.6 0 4M23 11c-1 1.4-1 2.6 0 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="brand-word">Roast Line</span>
+    </a>
+
+    <div class="nav-collapse" id="navCollapse">
+      <nav class="nav-links" id="navLinks">
+        <a href="#story">Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#roastery">Roastery</a>
+        <a href="#visit">Visit</a>
+        <a href="#journal">Journal</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="#visit" class="btn btn-line">Find Us</a>
+        <a href="#menu" class="btn btn-solid">Order Ahead</a>
+      </div>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-grain" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow" data-reveal>Small-Batch Roastery — Jaipur, Est. 2016</p>
+        <h1 class="hero-title" data-reveal>
+          <span class="line">Roast</span>
+          <span class="line">Line<span class="dot">.</span></span>
+          <span class="line hero-sub-line">Coffee Co.</span>
+        </h1>
+        <p class="hero-desc" data-reveal>
+          We track every bean from farm gate to first crack. Small drum, slow roast,
+          tasted every batch before it ever reaches your cup — poured daily on
+          Civil Lines Road.
+        </p>
+        <div class="hero-actions" data-reveal>
+          <a href="#menu" class="btn btn-solid btn-lg">View the Menu</a>
+          <a href="#roastery" class="btn btn-ghost btn-lg">See the Roast Line
+            <svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 8h11M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <div class="hero-gauge" data-reveal>
+          <span class="gauge-label">Light</span>
+          <div class="gauge-track">
+            <div class="gauge-fill"></div>
+            <span class="gauge-dot" style="left:78%" title="Today's roast: Dark City"></span>
+          </div>
+          <span class="gauge-label">Dark</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 420 480" class="hero-cup">
+          <defs>
+            <linearGradient id="roastGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#D8B588"/>
+              <stop offset="35%" stop-color="#B5652D"/>
+              <stop offset="70%" stop-color="#7A4423"/>
+              <stop offset="100%" stop-color="#2A1B12"/>
+            </linearGradient>
+          </defs>
+          <ellipse cx="190" cy="430" rx="150" ry="16" fill="#000" opacity="0.18"/>
+          <path class="steam s1" d="M140 150c-14-20-14-32 0-50s14-32 0-50" fill="none" stroke="#F3E8D6" stroke-width="5" stroke-linecap="round" opacity="0.55"/>
+          <path class="steam s2" d="M190 140c-14-22-14-34 0-52s14-32 0-50" fill="none" stroke="#F3E8D6" stroke-width="5" stroke-linecap="round" opacity="0.4"/>
+          <path class="steam s3" d="M240 150c-14-20-14-32 0-50s14-32 0-50" fill="none" stroke="#F3E8D6" stroke-width="5" stroke-linecap="round" opacity="0.55"/>
+          <path d="M90 190h210l-18 168a44 44 0 0 1-44 40h-86a44 44 0 0 1-44-40z" fill="url(#roastGrad)"/>
+          <path d="M90 190h210l-6 56H96z" fill="#F3E8D6" opacity="0.14"/>
+          <path d="M300 210h14a34 34 0 0 1 0 68h-18" fill="none" stroke="url(#roastGrad)" stroke-width="14"/>
+          <rect x="70" y="176" width="250" height="20" rx="10" fill="#1C120C"/>
+        </svg>
+        <div class="hero-stamp">
+          <svg viewBox="0 0 120 120" width="110" height="110">
+            <circle cx="60" cy="60" r="56" fill="none" stroke="#F3E8D6" stroke-width="1.4" stroke-dasharray="2 4"/>
+            <path id="stampCircle" d="M60,14 a46,46 0 1,1 -0.1,0" fill="none"/>
+            <text font-family="Space Mono, monospace" font-size="9.2" letter-spacing="2.4" fill="#F3E8D6">
+              <textPath href="#stampCircle" startOffset="2">HAND ROASTED · SINGLE ORIGIN · SLOW BATCH ·</textPath>
+            </text>
+            <text x="60" y="65" text-anchor="middle" font-family="Fraunces, serif" font-size="15" fill="#F3E8D6">LOT №1</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>Single Origin</span><span>·</span><span>Hand Roasted</span><span>·</span>
+        <span>Small Batch</span><span>·</span><span>Slow Poured</span><span>·</span>
+        <span>Farm Direct</span><span>·</span><span>Roasted Weekly</span><span>·</span>
+        <span>Single Origin</span><span>·</span><span>Hand Roasted</span><span>·</span>
+        <span>Small Batch</span><span>·</span><span>Slow Poured</span><span>·</span>
+        <span>Farm Direct</span><span>·</span><span>Roasted Weekly</span><span>·</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STORY ===== -->
+  <section class="story" id="story">
+    <div class="section-inner story-grid">
+      <div class="story-visual" data-reveal>
+        <svg viewBox="0 0 380 460" class="story-art">
+          <rect x="0" y="0" width="380" height="460" rx="18" fill="#EAD9BE"/>
+          <g transform="translate(40,60)">
+            <ellipse cx="150" cy="330" rx="120" ry="14" fill="#2A1B12" opacity="0.08"/>
+            <path d="M40 60 C40 20 100 0 150 0 C200 0 260 20 260 60 L250 230 C246 268 208 300 150 300 C92 300 54 268 50 230 Z" fill="#7A4423"/>
+            <path d="M40 60 C40 20 100 0 150 0 C200 0 260 20 260 60 C260 90 200 110 150 110 C100 110 40 90 40 60Z" fill="#B5652D"/>
+            <circle cx="150" cy="55" r="46" fill="#2A1B12" opacity="0.12"/>
+            <g fill="#2A1B12" opacity="0.85">
+              <ellipse cx="110" cy="55" rx="10" ry="15" transform="rotate(-20 110 55)"/>
+              <ellipse cx="150" cy="48" rx="10" ry="15" transform="rotate(0 150 48)"/>
+              <ellipse cx="190" cy="55" rx="10" ry="15" transform="rotate(20 190 55)"/>
+              <line x1="110" y1="55" x2="110" y2="55" stroke="#B5652D"/>
+            </g>
+          </g>
+        </svg>
+        <span class="badge-circle spin-slow">
+          <svg viewBox="0 0 100 100"><path id="storyCircle" d="M50,6 a44,44 0 1,1 -0.1,0" fill="none"/>
+          <text font-family="Space Mono, monospace" font-size="7.6" letter-spacing="2" fill="#2A1B12">
+          <textPath href="#storyCircle" startOffset="0">EST. 2016 · JAIPUR, INDIA · ROASTED SLOW ·</textPath></text></svg>
+        </span>
+      </div>
+
+      <div class="story-copy">
+        <p class="eyebrow" data-reveal>Our Story</p>
+        <h2 class="h2" data-reveal>Every bag has a line —<br> from crop to cup.</h2>
+        <p class="body-lg" data-reveal>
+          Roast Line started in a converted garage with a 1-kilo drum roaster and a
+          notebook full of failed batches. Ten years on, the drum is bigger but the
+          method hasn't changed: we buy direct from growers we've actually met,
+          roast in small lots, and log every profile so the cup tastes the same
+          whether it's your first visit or your five-hundredth.
+        </p>
+
+        <div class="stat-row" data-reveal>
+          <div class="stat">
+            <span class="stat-num">9</span>
+            <span class="stat-label">Origin farms<br>we buy direct from</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">18kg</span>
+            <span class="stat-label">Max batch size<br>on our drum roaster</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">48hr</span>
+            <span class="stat-label">Rest time before<br>beans go on bar</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU ===== -->
+  <section class="menu" id="menu">
+    <div class="section-inner">
+      <div class="menu-head">
+        <p class="eyebrow" data-reveal>On the Bar</p>
+        <h2 class="h2" data-reveal>The Menu</h2>
+        <p class="body-lg menu-intro" data-reveal>Each cup lists its roast line — where it sits between our lightest and darkest batch.</p>
+      </div>
+
+      <div class="menu-tabs" role="tablist" data-reveal>
+        <button class="tab active" data-tab="coffee">Coffee</button>
+        <button class="tab" data-tab="bakery">Bakery</button>
+        <button class="tab" data-tab="breakfast">Breakfast</button>
+      </div>
+
+      <div class="menu-panels">
+
+        <div class="menu-panel active" data-panel="coffee">
+          <div class="menu-list">
+
+            <article class="menu-item" data-roast="22">
+              <div class="menu-item-top">
+                <h3>Filter Drip <span class="tag">Light</span></h3>
+                <span class="price">₹180</span>
+              </div>
+              <p>Ethiopia Yirgacheffe, washed. Bright, floral, notes of bergamot and stone fruit.</p>
+              <div class="roast-gauge"><div class="roast-gauge-fill" style="width:22%"></div><span class="roast-gauge-dot" style="left:22%"></span></div>
+            </article>
+
+            <article class="menu-item" data-roast="45">
+              <div class="menu-item-top">
+                <h3>Flat White <span class="tag">Medium</span></h3>
+                <span class="price">₹220</span>
+              </div>
+              <p>House blend over steamed milk, poured tight — cocoa, toasted hazelnut, soft citrus finish.</p>
+              <div class="roast-gauge"><div class="roast-gauge-fill" style="width:45%"></div><span class="roast-gauge-dot" style="left:45%"></span></div>
+            </article>
+
+            <article class="menu-item" data-roast="60">
+              <div class="menu-item-top">
+                <h3>Cold Brew <span class="tag">Medium</span></h3>
+                <span class="price">₹210</span>
+              </div>
+              <p>Steeped 18 hours, Brazil Cerrado. Low acid, jaggery sweetness, served long over ice.</p>
+              <div class="roast-gauge"><div class="roast-gauge-fill" style="width:60%"></div><span class="roast-gauge-dot" style="left:60%"></span></div>
+            </article>
+
+            <article class="menu-item" data-roast="78">
+              <div class="menu-item-top">
+                <h3>Cortado <span class="tag">Dark</span></h3>
+                <span class="price">₹200</span>
+              </div>
+              <p>Equal parts espresso and warm milk. Our darkest house shot — caramel, walnut, molasses.</p>
+              <div class="roast-gauge"><div class="roast-gauge-fill" style="width:78%"></div><span class="roast-gauge-dot" style="left:78%"></span></div>
+            </article>
+
+            <article class="menu-item" data-roast="88">
+              <div class="menu-item-top">
+                <h3>Espresso Doppio <span class="tag">Dark</span></h3>
+                <span class="price">₹160</span>
+              </div>
+              <p>Dark City blend, pulled 27 seconds. Dense crema, dark chocolate, long finish.</p>
+              <div class="roast-gauge"><div class="roast-gauge-fill" style="width:88%"></div><span class="roast-gauge-dot" style="left:88%"></span></div>
+            </article>
+
+            <article class="menu-item" data-roast="35">
+              <div class="menu-item-top">
+                <h3>Pour Over <span class="tag">Light</span></h3>
+                <span class="price">₹240</span>
+              </div>
+              <p>Rotating single origin, hand-poured to order — ask what's on the bar today.</p>
+              <div class="roast-gauge"><div class="roast-gauge-fill" style="width:35%"></div><span class="roast-gauge-dot" style="left:35%"></span></div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="menu-panel" data-panel="bakery">
+          <div class="menu-list">
+            <article class="menu-item"><div class="menu-item-top"><h3>Sourdough Croissant</h3><span class="price">₹140</span></div><p>Laminated 48 hours, baked twice daily in small trays.</p></article>
+            <article class="menu-item"><div class="menu-item-top"><h3>Cardamom Bun</h3><span class="price">₹120</span></div><p>Slow-proofed brioche, ground cardamom, demerara crust.</p></article>
+            <article class="menu-item"><div class="menu-item-top"><h3>Dark Chocolate Babka</h3><span class="price">₹160</span></div><p>Cocoa-swirled yeasted loaf, sliced to order.</p></article>
+            <article class="menu-item"><div class="menu-item-top"><h3>Whole Wheat Banana Loaf</h3><span class="price">₹110</span></div><p>Roasted banana, toasted walnut, brown butter.</p></article>
+            <article class="menu-item"><div class="menu-item-top"><h3>Almond Financier</h3><span class="price">₹130</span></div><p>Brown-butter almond cake, baked in small batches.</p></article>
+            <article class="menu-item"><div class="menu-item-top"><h3>Seeded Rye Crackers</h3><span class="price">₹150</span></div><p>House-baked, sold by the jar, pairs with our cheese board.</p></article>
+          </div>
+        </div>
+
+        <div class="menu-panel" data-panel="breakfast">
+          <div class="menu-list">
+            <article class="menu-item"><div class="menu-item-top"><h3>Shakshuka</h3><span class="price">₹280</span></div><p>Baked eggs, smoked tomato, crusty sourdough on the side.</p></article>
+            <article class="menu-item"><div class="menu-item-top"><h3>Avocado on Rye</h3><span class="price">₹260</span></div><p>House rye, whipped feta, chilli oil, soft egg.</p></article>
+            <article class="menu-item"><div class="menu-item-top"><h3>Masala Omelette Roll</h3><span class="price">₹200</span></div><p>Three-egg omelette, onion masala, folded into a warm paratha.</p></article>
+            <article class="menu-item"><div class="menu-item-top"><h3>Overnight Oats</h3><span class="price">₹190</span></div><p>Steeped in cold brew, roasted seeds, seasonal fruit.</p></article>
+            <article class="menu-item"><div class="menu-item-top"><h3>Granola Bowl</h3><span class="price">₹210</span></div><p>House granola, curd, honey, toasted coconut.</p></article>
+            <article class="menu-item"><div class="menu-item-top"><h3>Breakfast Thali</h3><span class="price">₹320</span></div><p>Rotating chef's plate — ask your server what's on today.</p></article>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ROASTERY / PROCESS ===== -->
+  <section class="roastery" id="roastery">
+    <div class="section-inner">
+      <p class="eyebrow eyebrow-light" data-reveal>The Roast Line</p>
+      <h2 class="h2 h2-light" data-reveal>From green bean to<br> your cup, in five stops.</h2>
+
+      <div class="process-line" data-reveal>
+        <div class="process-track"></div>
+        <div class="process-steps">
+
+          <div class="process-step">
+            <span class="process-index">01</span>
+            <h3>Sourced</h3>
+            <p>Bought direct from growers in Chikmagalur, Coorg &amp; beyond — full traceability, fair price.</p>
+          </div>
+
+          <div class="process-step">
+            <span class="process-index">02</span>
+            <h3>Cupped</h3>
+            <p>Every lot is tasted blind against three benchmark cups before it earns a place on our list.</p>
+          </div>
+
+          <div class="process-step">
+            <span class="process-index">03</span>
+            <h3>Roasted</h3>
+            <p>18kg drum, logged profile, tasted again mid-batch — nothing goes out untested.</p>
+          </div>
+
+          <div class="process-step">
+            <span class="process-index">04</span>
+            <h3>Rested</h3>
+            <p>48 hours minimum off the roaster before beans reach the grinder.</p>
+          </div>
+
+          <div class="process-step">
+            <span class="process-index">05</span>
+            <h3>Poured</h3>
+            <p>Ground to order, dialled in every morning by hand — no auto-doser, ever.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="voices">
+    <div class="section-inner">
+      <p class="eyebrow" data-reveal>Regulars Say</p>
+      <div class="voices-grid" data-reveal>
+        <blockquote class="voice">
+          <p>“The cold brew here ruined every other cold brew for me. Ask for the Cerrado — it's the one with jaggery on the notes card.”</p>
+          <cite>Ananya R. — Civil Lines</cite>
+        </blockquote>
+        <blockquote class="voice">
+          <p>“First cafe in the city that actually tells you the roast level on the menu instead of just calling everything 'medium'.”</p>
+          <cite>Kabir S. — regular since 2019</cite>
+        </blockquote>
+        <blockquote class="voice">
+          <p>“Cardamom bun and a doppio, every single morning. They know my order before I say it.”</p>
+          <cite>Meher D. — Malviya Nagar</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VISIT ===== -->
+  <section class="visit" id="visit">
+    <div class="section-inner visit-grid">
+      <div class="visit-copy" data-reveal>
+        <p class="eyebrow">Visit</p>
+        <h2 class="h2">Come sit at<br>the bar.</h2>
+
+        <div class="visit-block">
+          <h4>Address</h4>
+          <p>14/2 Civil Lines Road<br>Jaipur, Rajasthan 302006</p>
+        </div>
+        <div class="visit-block">
+          <h4>Hours</h4>
+          <p>Mon – Fri &nbsp; 7:30am – 8:00pm<br>Sat – Sun &nbsp; 8:00am – 9:00pm</p>
+        </div>
+        <div class="visit-block">
+          <h4>Reach Us</h4>
+          <p><a href="tel:+911412345678">+91 141 234 5678</a><br><a href="mailto:hello@roastline.co">hello@roastline.co</a></p>
+        </div>
+
+        <div class="visit-social">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="Whatsapp">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="visit-map" data-reveal aria-hidden="true">
+        <svg viewBox="0 0 500 460" class="map-art">
+          <rect x="0" y="0" width="500" height="460" rx="18" fill="#EAD9BE"/>
+          <g stroke="#2A1B12" stroke-opacity="0.25" stroke-width="2">
+            <line x1="0" y1="120" x2="500" y2="100"/>
+            <line x1="0" y1="260" x2="500" y2="300"/>
+            <line x1="120" y1="0" x2="90" y2="460"/>
+            <line x1="360" y1="0" x2="400" y2="460"/>
+          </g>
+          <circle cx="250" cy="200" r="70" fill="none" stroke="#7A4423" stroke-width="1.4" stroke-dasharray="3 5"/>
+          <circle cx="250" cy="200" r="10" fill="#7A4423"/>
+          <path d="M250 158 c-22 0-38 16-38 38 c0 28 38 62 38 62s38-34 38-62c0-22-16-38-38-38z" fill="#2A1B12"/>
+          <circle cx="250" cy="196" r="14" fill="#EAD9BE"/>
+          <text x="250" y="290" text-anchor="middle" font-family="Space Mono, monospace" font-size="11" letter-spacing="1.5" fill="#2A1B12">CIVIL LINES ROAD</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER / CTA ===== -->
+  <section class="cta-strip" id="journal">
+    <div class="section-inner cta-inner">
+      <div>
+        <p class="eyebrow eyebrow-light">The Journal</p>
+        <h2 class="h2 h2-light">New crop notes, straight<br>to your inbox.</h2>
+        <p class="body-lg cta-desc">One email a month — new arrivals, roast notes, and the odd recipe. No spam, we promise; we barely have time to roast as it is.</p>
+      </div>
+      <form class="cta-form" id="signupForm">
+        <label for="emailInput" class="sr-only">Email address</label>
+        <input type="email" id="emailInput" placeholder="you@email.com" required>
+        <button type="submit" class="btn btn-solid">Subscribe</button>
+      </form>
+      <p class="form-note" id="formNote" aria-live="polite"></p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="section-inner footer-grid">
+    <div class="footer-brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="26" height="26">
+          <path d="M8 15h20a3 3 0 0 1 3 3v2a6 6 0 0 1-6 6h-1.2A8 8 0 0 1 16 33h-1A8 8 0 0 1 7 25V15z" fill="none" stroke="currentColor" stroke-width="2.2"/>
+          <path d="M30 18h2a3.6 3.6 0 0 1 0 7.2h-2" fill="none" stroke="currentColor" stroke-width="2.2"/>
+        </svg>
+      </span>
+      <span class="brand-word">Roast Line Coffee Co.</span>
+      <p>Small-batch roastery &amp; cafe.<br>Jaipur, since 2016.</p>
+    </div>
+
+    <div class="footer-col">
+      <h5>Explore</h5>
+      <a href="#story">Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#roastery">Roastery</a>
+      <a href="#visit">Visit</a>
+    </div>
+
+    <div class="footer-col">
+      <h5>Shop</h5>
+      <a href="#">Beans</a>
+      <a href="#">Gift Cards</a>
+      <a href="#">Merch</a>
+      <a href="#">Subscriptions</a>
+    </div>
+
+    <div class="footer-col">
+      <h5>Roast Line</h5>
+      <div class="footer-gauge">
+        <div class="gauge-track"><div class="gauge-fill"></div></div>
+        <div class="gauge-labels"><span>Light</span><span>Dark</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom section-inner">
+    <span>© <span id="year"></span> Roast Line Coffee Co. All rights reserved.</span>
+    <span>Built with care, one batch at a time.</span>
+  </div>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <svg width="16" height="16" viewBox="0 0 16 16"><path d="M8 13V3M3 7l5-5 5 5" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="main.js"></script>
+</body>
+</html>
